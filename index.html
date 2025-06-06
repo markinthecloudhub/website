@@ -1065,36 +1065,6 @@ var wa_client = {}; wa_client.cmd = []; wa_client.config = { 'blog_id': 21264079
 			{ tag: "&lt;div id=&quot;atatags-26942-{{unique_id}}&quot;&gt;&lt;/div&gt;&lt;script&gt;__ATA.cmd.push(function() {__ATA.initDynamicSlot({id: \'atatags-26942-{{unique_id}}\',location: 140,formFactor: \'003\',label: {text: \'Advertisements\',},creative: {reportAd: {text: \'Report this ad\',},privacySettings: {text: \'Privacy\',onClick: function() { window.__tcfapi &amp;&amp; window.__tcfapi( \'showUi\' ); },}}});});&lt;/script&gt;", type: 'sidebar' },
 			{ tag: "&lt;div id=&quot;atatags-26942-{{unique_id}}&quot;&gt;&lt;/div&gt;&lt;script&gt;__ATA.cmd.push(function() {__ATA.initDynamicSlot({id: \'atatags-26942-{{unique_id}}\',location: 110,formFactor: \'002\',label: {text: \'Advertisements\',},creative: {reportAd: {text: \'Report this ad\',},privacySettings: {text: \'Privacy\',onClick: function() { window.__tcfapi &amp;&amp; window.__tcfapi( \'showUi\' ); },}}});});&lt;/script&gt;", type: 'top' }
 		);
-	</script>		<script type="text/javascript">
-
-			window.doNotSellCallback = function() {
-
-				var linkElements = [
-					'a[href="https://wordpress.com/?ref=footer_blog"]',
-					'a[href="https://wordpress.com/?ref=footer_website"]',
-					'a[href="https://wordpress.com/?ref=vertical_footer"]',
-					'a[href^="https://wordpress.com/?ref=footer_segment_"]',
-				].join(',');
-
-				var dnsLink = document.createElement( 'a' );
-				dnsLink.href = 'https://wordpress.com/advertising-program-optout/';
-				dnsLink.classList.add( 'do-not-sell-link' );
-				dnsLink.rel = 'nofollow';
-				dnsLink.style.marginLeft = '0.5em';
-				dnsLink.textContent = 'Do Not Sell or Share My Personal Information';
-
-				var creditLinks = document.querySelectorAll( linkElements );
-
-				if ( 0 === creditLinks.length ) {
-					return false;
-				}
-
-				Array.prototype.forEach.call( creditLinks, function( el ) {
-					el.insertAdjacentElement( 'afterend', dnsLink );
-				});
-
-				return true;
-			};
 
 </script>
 
