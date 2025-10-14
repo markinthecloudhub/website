@@ -1,238 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bakasana Wellness — Massage · Yoga · Reiki</title>
-  <style>
-    /* Simple, clean responsive styles */
-    :root{
-      --accent:#7aa37a;
-      --dark:#1f1f1f;
-      --muted:#666;
-      --card-bg:#fff;
-      --max-width:1100px;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;color:var(--dark);background:#fbfbfb;line-height:1.5}
-    .wrap{max-width:var(--max-width);margin:0 auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
-    .logo .mark{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,#cfead2,#eaf7ee);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
-    nav{display:flex;gap:16px}
-    nav a{color:var(--muted);text-decoration:none;font-weight:600}
-    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:40px 0}
-    .hero-inner{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.85));padding:28px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
-    .hero h1{margin:0 0 8px;font-size:28px}
-    .hero p{margin:0 0 12px;color:var(--muted)}
-    .hero .btns{display:flex;gap:12px;flex-wrap:wrap}
-    /* sections */
-    section{padding:28px 0;border-top:1px solid #eee}
-    h2{margin:0 0 12px;font-size:20px}
-    .grid{display:grid;gap:18px}
-    .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));display:grid}
-    .card{background:var(--card-bg);padding:18px;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,0.04)}
-    .price{font-weight:700;margin-top:10px}
-    .two-col{display:grid;grid-template-columns:1fr 320px;gap:24px}
-    .contact form{display:flex;flex-direction:column;gap:10px}
-    input,textarea{padding:10px;border-radius:8px;border:1px solid #ddd;font-size:14px;width:100%;font-family:inherit}
-    textarea{min-height:120px;resize:vertical}
-    footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #eee}
-    .testi{font-style:italic;color:#333}
-    /* responsive */
-    @media (max-width:900px){
-      .two-col{grid-template-columns:1fr}
-      nav{display:none}
-      .mobile-nav-btn{display:inline-block}
-    }
-    @media (min-width:901px){
-      .mobile-nav-btn{display:none}
-    }
-    /* simple hero background */
-    .hero-bg{
-      background-image:linear-gradient(180deg, rgba(122,163,122,0.08), rgba(122,163,122,0.02));
-      border-radius:12px;padding:28px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bakāsana Wellness</title>
+  <meta name="description" content="Ayurvedische massage, 1:1 yoga en Reiki in Sleeuwijk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="logo" href="#">
-        <div class="mark">B</div>
-        <div>
-          <div style="font-weight:700">Bakasana Wellness</div>
-          <div style="font-size:12px;color:var(--muted)">Massage · Yoga · Reiki</div>
-        </div>
-      </a>
-
-      <nav aria-label="Hoofdmenu">
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">Bakāsana Wellness</div>
+      <nav>
+        <a href="#home">Home</a>
         <a href="#about">Over</a>
-        <a href="#services">Behandelingen</a>
-        <a href="#testimonials">Ervaringen</a>
+        <a href="#massage">Massage</a>
+        <a href="#yoga">Yoga 1:1</a>
+        <a href="#reiki">Reiki</a>
+        <a href="#ayurveda">Ayurveda</a>
         <a href="#contact">Contact</a>
       </nav>
+    </div>
+  </header>
 
-      <a class="cta" href="mailto:info@bakasanawellness.com">Boek nu</a>
-
-      <!-- mobile nav toggle (simple) -->
-      <button class="mobile-nav-btn" onclick="toggleMobileNav()" aria-label="Menu" style="background:none;border:0;font-weight:700;margin-left:12px">☰</button>
-    </header>
-
-    <!-- HERO -->
-    <main>
-      <section class="hero hero-bg" aria-labelledby="hero-heading">
-        <div class="hero-inner">
-          <h1 id="hero-heading">Kom thuis in uw lichaam</h1>
-          <p>Geniet van een Ayurvedische massage, 1:1 yoga of Reiki in een rustige studio in Sleeuwijk.</p>
-          <div class="btns">
-            <a class="cta" href="#contact">Plan een sessie</a>
-            <a href="#services" style="text-decoration:none;padding:10px 14px;border-radius:8px;border:1px solid #ddd;font-weight:600">Bekijk behandelingen</a>
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Kom thuis in uw lichaam</h1>
+          <p>Het leven kent getijden, maar we kunnen de deining makkelijker aan als we op een golflengte zitten met ons lichaam, onze geest en ziel, en wat zij het meest nodig hebben. Door te genieten van een Ayurvedische massage, uw lichaam te bewegen met yoga, of Reiki te ontvangen, kunt u het vermogen van u lichaam om zichzelf te helen, ondersteunen, terwijl u ook opnieuw met jezelf in verbinding komt.</p>
+          <div class="cta-row">
+            <a class="btn" href="#contact">Plan een sessie</a>
           </div>
         </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about">
-        <div class="two-col">
-          <div>
-            <h2>Welkom — Ik ben Sarah</h2>
-            <p style="color:var(--muted)">
-              In mijn kalmerende studio in Sleeuwijk bied ik Ayurvedische massage, individuele yoga en Reiki aan.
-              Elke sessie is gericht op herstel, ontspanning en hernieuwde verbinding met uzelf.
-            </p>
-
-            <h3 style="margin-top:18px">Opleiding</h3>
-            <p style="color:var(--muted);margin-top:6px">
-              Ayurvedische massage, Yoga Alliance 200u teacher training en Usui Reiki level 2.
-            </p>
-            <p style="margin-top:12px"><strong>KVK-nummer:</strong> 89887751</p>
-          </div>
-
-          <div class="card" aria-hidden="true">
-            <!-- replace src with the real image URL if you want -->
-            <img src="https://via.placeholder.com/320x200.png?text=Studio+foto" alt="Studio foto" style="width:100%;border-radius:8px;margin-bottom:12px;display:block" />
-            <div style="font-size:13px;color:var(--muted)">Studioadres (voorbeeld)</div>
-            <div style="margin-top:8px"><strong>Bel / Whatsapp:</strong> 06 36 56 53 79</div>
-            <div style="margin-top:8px"><a href="mailto:info@bakasanawellness.com">info@bakasanawellness.com</a></div>
-          </div>
+        <div class="hero-media">
+          <img src="assets/hero.jpg" alt="Crane Pose" />
         </div>
-      </section>
-
-      <!-- SERVICES -->
-      <section id="services">
-        <h2>Behandelingen</h2>
-        <div class="services">
-          <article class="card">
-            <h3>Ayurvedische massage — Full body</h3>
-            <p style="color:var(--muted)">Stimuleert energie, ontspanning en huidverzorging.</p>
-            <div class="price">65 min — €60</div>
-          </article>
-
-          <article class="card">
-            <h3>Voet & Onderbeen verzorging</h3>
-            <p style="color:var(--muted)">Herstelt de bloedsomloop en verlicht vermoeidheid.</p>
-            <div class="price">35 min — €30</div>
-          </article>
-
-          <article class="card">
-            <h3>Gezichtsbehandeling — Pure glans</h3>
-            <p style="color:var(--muted)">Remediërende behandeling voor gezicht, nek en hoofd.</p>
-            <div class="price">35 min — €30</div>
-          </article>
-
-          <article class="card">
-            <h3>Beginners Yoga 1:1</h3>
-            <p style="color:var(--muted)">Persoonlijke sessies op maat — studio of thuis.</p>
-            <div class="price">75 min — €90 / 60 min — €75</div>
-          </article>
-
-          <article class="card">
-            <h3>Reiki</h3>
-            <p style="color:var(--muted)">Channeling van universele energie voor heling en balans.</p>
-            <div class="price">60 min — €55 · 45 min — €45 · 30 min — €30</div>
-          </article>
-        </div>
-      </section>
-
-      <!-- TESTIMONIALS -->
-      <section id="testimonials">
-        <h2>Ervaringen</h2>
-        <div class="card">
-          <p class="testi">“Ik voel me echt licht en blij na mijn sessie. Mijn lichaam voelt zacht en verzorgd. In mijn hoofd voel ik me helder, kalm en blij.”</p>
-          <p style="margin-top:8px;font-weight:700">— Clair Subhadra Michna</p>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="contact">
-        <h2>Contact & Boeken</h2>
-        <div class="two-col">
-          <div>
-            <p style="color:var(--muted)">Stuur een bericht of bel/WhatsApp om een afspraak te maken.</p>
-
-            <form onsubmit="event.preventDefault(); alert('Formulier verzonden (demo). Vervang met werkende backend).');">
-              <input type="text" name="name" placeholder="Uw naam" required>
-              <input type="email" name="email" placeholder="Email" required>
-              <input type="text" name="phone" placeholder="Telefoon (optioneel)">
-              <textarea name="message" placeholder="Uw bericht / gewenste behandeling" required></textarea>
-              <button type="submit" class="cta" style="border:none;cursor:pointer">Verstuur</button>
-            </form>
-          </div>
-
-          <aside class="card" aria-hidden="true">
-            <h3>Praktische info</h3>
-            <ul style="padding-left:18px;color:var(--muted)">
-              <li>Studio in Sleeuwijk</li>
-              <li>Betaling: pin / contant</li>
-              <li>Annuleringsvoorwaarden: 24 uur</li>
-            </ul>
-            <p style="margin-top:12px"><a href="mailto:info@bakasanawellness.com">info@bakasanawellness.com</a></p>
-            <p style="margin-top:8px"><strong>Telefoon:</strong> 06 36 56 53 79</p>
-          </aside>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div>Bakasana Wellness — Ayurvedische massage · Yoga · Reiki</div>
-        <div style="color:var(--muted)">KVK: 89887751 — © <span id="year"></span></div>
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <script>
-    // small scripts
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Welkom! Ik ben Sarah!</h2>
+          <p>In mijn mooie, kalmerende studio in Sleeuwijk (in het hart van Nederland), kunt u mij bezoeken voor massage, 1:1 yoga of Reiki.</p>
+          <p>Ik heb Ayurvedische massage gestudeerd bij <a href="https://tri-dosha.co.uk/" target="_blank" rel="noopener">Tri-Dosha in Nottingham</a> (VK) en 200-uur Yoga Alliance® teacher training bij <a href="https://sacredriversyoga.com/" target="_blank" rel="noopener">Sacred Rivers Yoga</a> (VS). Mijn Reiki level 2 afstemming (attunement) is onderricht in het traditionele Usui-Systeem.</p>
+        </div>
+        <div class="media-card">
+          <img src="assets/sarah.jpg" alt="Sarah in de studio" />
+        </div>
+      </div>
+    </section>
 
-    function toggleMobileNav(){
-      // a very small mobile nav: toggles a simple prompt
-      const menu = document.querySelector('nav');
-      if(!menu) return;
-      if(getComputedStyle(menu).display === 'none'){
-        // show a quick mobile overlay
-        const overlay = document.createElement('div');
-        overlay.id = 'mobileNavOverlay';
-        overlay.style.position='fixed';
-        overlay.style.inset='0';
-        overlay.style.background='rgba(0,0,0,0.6)';
-        overlay.style.zIndex='9999';
-        overlay.innerHTML = '<div style="background:white;padding:20px;max-width:320px;margin:80px auto;border-radius:10px;">'
-          + '<a href=\"#about\" style=\"display:block;padding:8px 0\">Over</a>' 
-          + '<a href=\"#services\" style=\"display:block;padding:8px 0\">Behandelingen</a>'
-          + '<a href=\"#testimonials\" style=\"display:block;padding:8px 0\">Ervaringen</a>'
-          + '<a href=\"#contact\" style=\"display:block;padding:8px 0\">Contact</a>'
-          + '<div style=\"padding-top:10px\"><button onclick=\"document.getElementById(\\'mobileNavOverlay\\').remove()\" style=\"padding:8px 12px\">Sluiten</button></div>'
-          + '</div>';
-        document.body.appendChild(overlay);
-      } else {
-        // fallback: just show nav (desktop visible) — nothing to do
-      }
-    }
-  </script>
+    <section id="massage" class="section alt">
+      <div class="container">
+        <h2>Massage</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Optie een: Kom in de flow</h3>
+            <p>Deze full body behandeling zal een gezonde stroom van energie stimuleren door de verbindingen en nadi’s (paden) van het lichaam.</p>
+            <p class="meta">Helpt met: ontspanning, ontgifting, vermoeidheid en voeden van de huid.</p>
+            <p class="price">65 minuten / € 60</p>
+          </article>
+          <article class="card">
+            <h3>Optie twee: De voeder</h3>
+            <p>Deze therapeutische behandeling voor uw onderbenen en voeten, helpt om energieblokkering op te heffen, de bloedsomloop te verbeteren en vermoeide kuiten te herstellen. U voelt uw verlicht en energieker en de zolen van uw voeten worden gereinigd en gevoed.</p>
+            <p class="meta">Helpt met: ontspanning, vitaliteit, bloedsomloop en effecten na een lange reis.</p>
+            <p class="price">35 minuten / € 30</p>
+          </article>
+          <article class="card">
+            <h3>Optie drie: Pure glans</h3>
+            <p>Deze remediërende behandeling werkt aan uw gezicht, nek en hoofd. Druk op energie-punten lift de spieren in het gezicht. Dit zorgt voor een jeugdige en vitale glans. Het stimuleren verhoogt ook de toevoer van bloed en collageen om zo problematische lijntjes te verminderen.</p>
+            <p class="meta">Helpt met: fysieke en mentale gezondheid en anti-veroudering.</p>
+            <p class="price">35 minuten / € 30</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="yoga" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Beginners Yoga 1:1</h2>
+          <p>Deze individuele yoga sessies zijn samengesteld naar uw persoonlijke behoeften. Voor we beginnen, nemen we de tijd om te bespreken wat voor u werkt, waar u hulp mee wilt en werken we samen aan het uitlijnen van de fundamentele yogahoudingen.</p>
+          <ul class="bullets">
+            <li>75 minuten / € 90 <span class="note">(sessie bij u thuis of in mijn studio aan huis)</span></li>
+            <li>60 minuten / € 75 <span class="note">(sessie bij u thuis of in mijn studio aan huis)</span></li>
+          </ul>
+        </div>
+        <div class="media-card">
+          <img src="assets/yoga.jpg" alt="1:1 Yoga sessie" />
+        </div>
+      </div>
+    </section>
+
+    <section id="reiki" class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>Reiki</h2>
+          <p>Met Reiki, channel ik universele energie, via mij naar u toe. Door het energiesysteem van het lichaam te gebruiken en met behulp van verschillende punten op het lichaam, help ik uw lichaam zichzelf te genezen.</p>
+          <p>De eerste sessie is inclusief een gratis kort intakegesprek van 10-minuten.</p>
+          <ul class="bullets">
+            <li>60 minuten / € 55</li>
+            <li>45 minuten / € 45</li>
+            <li>30 minuten / € 30</li>
+          </ul>
+        </div>
+        <div class="media-card">
+          <img src="assets/reiki.jpg" alt="Reiki sessie" />
+        </div>
+      </div>
+    </section>
+
+    <section id="ayurveda" class="section">
+      <div class="container">
+        <blockquote class="pull">“Ayurveda leert ons om onze ware aard te koesteren – om lief te hebben en te eren wie we zijn.”</blockquote>
+        <p>Ayurveda is een eeuwenoude Indiase geneeswijze en betekent letterlijk vertaald uit het Sanskrit ‘wetenschap van het leven’. Het is een holistische geneeswijze die yoga, meditatie, voeding en kruiden combineert.</p>
+        <p>In de kern gaat het er bij Ayurveda om dat ons lichaam een microkosmos van het universum is. Daarbinnen zijn drie dosha’s aan het werk: Vata (lucht), Pitta (vuur) en Kapha (aarde). De Ayurvedische massage behandelingen die ik aanbied zijn inclusief een ‘dosha’ consultatie van 5 minuten. Met deze zelfkennis bent u beter in staat om keuzes te maken als het gaat om uw gezondheid.</p>
+
+        <div class="product">
+          <img src="assets/oil.jpg" alt="Tri-Dosha Danwantari olie" />
+          <p>Voor uw massage helpt <a href="https://tri-dosha.co.uk/" target="_blank" rel="noopener">Tri-Dosha’s Danwantari</a> voedende en vochtinbrengende body olie om van de huid te vernieuwen en vereffenen. Verrijkt met de essentiële oliën zoete sinaasappel en kaneelblad, en drieënveertig verfrissende kruiden om heel uw lichaam nieuw leven in te blazen. Gemaakt met 100% natuurlijke ingrediënten, wild-geplukt en veganistisch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonial alt">
+      <div class="container">
+        <blockquote>“Ik voel me echt licht en blij na mijn sessie. Mijn lichaam voelt zacht en verzorgd. In mijn hoofd voel ik me helder, kalm en blij. Ik raad deze fantastische vrouw zeker aan.”</blockquote>
+        <div class="cite">— Clair Subhadra Michna</div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Contact</h3>
+        <ul class="contact">
+          <li>Telefoon: <a href="tel:+31636565379">06 36 56 53 79</a></li>
+          <li>E‑mail: <a href="mailto:info@bakasanawellness.com">info@bakasanawellness.com</a></li>
+          <li>KVK-nummer: 89887751</li>
+          <li>Locatie: Sleeuwijk, Nederland</li>
+        </ul>
+      </div>
+      <div class="smallprint">© <span id="year"></span> Bakāsana Wellness</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
