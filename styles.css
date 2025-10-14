@@ -41,6 +41,7 @@ a:hover{text-decoration:underline}
   display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px;
 }
 .brand{font-family:"Playfair Display",serif;font-weight:600;letter-spacing:.4px}
+.brand-link{color:var(--ink);text-decoration:none}
 nav a{margin-left:1rem;color:var(--muted)}
 nav a:hover{color:var(--ink)}
 
@@ -50,7 +51,7 @@ nav a:hover{color:var(--ink)}
 .cta-row{margin-top:1rem}
 .btn{
   display:inline-block;background:var(--ink);color:#fff;padding:.7rem 1rem;border-radius:999px;
-  transition:transform .08s ease, box-shadow .2s ease;box-shadow:0 6px 18px var(--ring);
+  transition:transform .08s ease, box-shadow .2s ease;box-shadow:0 6px 18px rgba(0,0,0,.15);
 }
 .btn:hover{transform:translateY(-1px)}
 
@@ -64,14 +65,16 @@ nav a:hover{color:var(--ink)}
 
 .bullets{padding-left:1.2rem}
 .bullets li{margin:.4rem 0}
+.note{color:var(--muted);font-size:.95em}
 
 .pull{font-size:1.25rem;border-left:4px solid var(--accent);padding-left:1rem;color:var(--muted)}
 
 .product{display:grid;grid-template-columns:120px 1fr;gap:1rem;align-items:center;margin-top:1rem}
 .product img{width:100%;height:auto;border-radius:12px;border:1px solid #eee}
 
-.testimonial blockquote{font-size:1.2rem;margin:0}
-.testimonial .cite{margin-top:.75rem;color:var(--muted)}
+.contact.large{list-style:none;padding:0}
+.contact.large li{margin:.4rem 0}
+.muted{color:var(--muted)}
 
 .site-footer{background:#121212;color:#eee;padding:2.5rem 0;margin-top:2rem}
 .site-footer h3{color:#fff;margin-bottom:.5rem}
