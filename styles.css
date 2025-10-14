@@ -87,3 +87,42 @@ nav a:hover{color:var(--ink)}
   .cards{grid-template-columns:1fr}
   nav{display:none}
 }
+/* --- Mobile Menu --- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 0;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  }
+
+  .main-nav a {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-align: center;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}
