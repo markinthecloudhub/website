@@ -7,3 +7,8 @@ if (menuToggle && mainNav) {
     mainNav.classList.toggle('open');
   });
 }
+
+// Update footer year where present
+document.querySelectorAll('.year').forEach(el => {
+  el.textContent = new Date().getFullYear();
+});
