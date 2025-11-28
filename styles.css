@@ -79,7 +79,7 @@ nav a:hover{color:var(--ink)}
 .site-footer{background:#9fa99a;color:#f9f9f6;padding:1.75rem 0;margin-top:1.5rem}
 .site-footer h3{color:#ffffff;margin-bottom:.4rem}
 .footer-grid{display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:start}
-.footer-logo{width:120px;max-width:100%;height:auto;display:block}
+.footer-logo{width:120px;max-width:100%;height:auto;display:block;opacity:.82}
 .smallprint{align-self:end;color:#edf1ec}
 .footer-grid a{color:#ffffff}
 .footer-grid a:hover{color:#f4e9d8}
