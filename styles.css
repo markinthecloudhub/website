@@ -62,7 +62,7 @@ nav a:hover{color:var(--ink)}
 .card{background:var(--card);padding:1.2rem;border-radius:16px;border:1px solid #eee;box-shadow:0 6px 16px rgba(0,0,0,.04)}
 .card .price{font-weight:600;margin-top:.4rem}
 .card .meta{color:var(--muted)}
-.contact-photo{max-width:520px;margin:1.5rem auto 0}
+.contact-photo{max-width:440px;margin:0 auto;justify-self:end}
 
 .bullets{padding-left:1.2rem}
 .bullets li{margin:.4rem 0}
