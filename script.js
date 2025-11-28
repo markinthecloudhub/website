@@ -1,9 +1,3 @@
-// Update year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Update footer year
-document.getElementById('year').textContent = new Date().getFullYear();
-
 // Toggle mobile menu
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
@@ -13,3 +7,8 @@ if (menuToggle && mainNav) {
     mainNav.classList.toggle('open');
   });
 }
+
+// Update footer year where present
+document.querySelectorAll('.year').forEach(el => {
+  el.textContent = new Date().getFullYear();
+});
