@@ -1,8 +1,8 @@
-// Update year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Update footer year
-document.getElementById('year').textContent = new Date().getFullYear();
+// Update year in footer when present
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
 // Toggle mobile menu
 const menuToggle = document.querySelector('.menu-toggle');
