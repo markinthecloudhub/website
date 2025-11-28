@@ -40,7 +40,8 @@ a:hover{text-decoration:underline}
 .site-header .nav{
   display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px;
 }
-.brand{font-family:"Playfair Display",serif;font-weight:600;letter-spacing:.4px}
+.brand{display:flex;align-items:center;gap:.5rem;font-family:"Playfair Display",serif;font-weight:600;letter-spacing:.4px}
+.brand-logo{height:34px;width:auto;display:block}
 .brand-link{color:var(--ink);text-decoration:none}
 nav a{margin-left:1rem;color:var(--muted)}
 nav a:hover{color:var(--ink)}
@@ -78,18 +79,10 @@ nav a:hover{color:var(--ink)}
 
 .site-footer{background:#9fa99a;color:#f9f9f6;padding:1.75rem 0;margin-top:1.5rem}
 .site-footer h3{color:#ffffff;margin-bottom:.4rem}
-.footer-grid{display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:start}
-.footer-logo{width:120px;max-width:100%;height:auto;display:block;opacity:.82}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start}
 .smallprint{align-self:end;color:#edf1ec}
 .footer-grid a{color:#ffffff}
 .footer-grid a:hover{color:#f4e9d8}
-
-@media (max-width: 700px){
-  .footer-grid{grid-template-columns:1fr;text-align:center}
-  .footer-logo{margin:0 auto}
-  .smallprint{align-self:center;justify-self:center}
-  .footer-grid ul.contact{padding:0;list-style:none}
-}
 
 @media (max-width: 860px){
   .hero-grid,.two-col,.product{grid-template-columns:1fr}
