@@ -73,8 +73,10 @@ nav a:hover{color:var(--ink)}
 .product{display:grid;grid-template-columns:120px 1fr;gap:1rem;align-items:center;margin-top:1rem}
 .product img{width:100%;height:auto;border-radius:12px;border:1px solid #eee}
 
-.contact.large{list-style:none;padding:0}
-.contact.large li{margin:.4rem 0}
+.contact{list-style:none;padding:0}
+.contact li{display:flex;align-items:center;gap:.55rem;margin:.4rem 0}
+.contact .ci{width:1rem;text-align:center;flex-shrink:0;opacity:.8}
+.contact.large .ci{color:var(--accent)}
 .muted{color:var(--muted)}
 
 .site-footer{background:#9fa99a;color:#f9f9f6;padding:1.75rem 0;margin-top:1.5rem}
