@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burnout Recovery Program — Bakasana Wellness</title>
+  <meta name="description" content="A 3-session burnout recovery program for deep stress, exhaustion and emotional overload." />
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .session-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; margin-top: 2rem; }
+    .session-card { background: var(--card); padding: 1.5rem; border-radius: 16px; border: 1px solid #eee; box-shadow: 0 6px 16px rgba(0,0,0,.04); }
+    .session-number { font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: .4rem; }
+    .session-card h3 { margin-bottom: .25rem; }
+    .session-tag { display: inline-block; font-size: .8rem; color: var(--muted); border: 1px solid #ddd; border-radius: 999px; padding: .15rem .65rem; margin-bottom: .75rem; }
+    .result-line { margin-top: 1rem; padding-top: .75rem; border-top: 1px solid #eee; font-size: .9rem; color: var(--muted); }
+    .result-line strong { color: var(--ink); }
+    .pricing-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 2rem; }
+    .pricing-card { background: var(--card); padding: 1.5rem; border-radius: 16px; border: 1px solid #eee; box-shadow: 0 6px 16px rgba(0,0,0,.04); }
+    .pricing-card.featured { border-color: var(--accent); box-shadow: 0 6px 24px var(--ring); }
+    .pricing-card h3 { margin-bottom: .25rem; }
+    .pricing-card .price { font-size: 1.5rem; font-weight: 600; color: var(--ink); margin: .5rem 0; font-family: "Playfair Display", serif; }
+    .pricing-card .note { color: var(--muted); font-size: .9em; margin-bottom: 1rem; }
+    .benefit-list { list-style: none; padding: 0; margin: .75rem 0 0; }
+    .benefit-list li { display: flex; gap: .5rem; align-items: flex-start; margin: .35rem 0; font-size: .95rem; }
+    .benefit-list li::before { content: "✓"; color: var(--accent); font-weight: 600; flex-shrink: 0; margin-top: .05rem; }
+    .cta-section { text-align: center; padding: 3rem 0; }
+    .cta-section p { max-width: 500px; margin: 0 auto 1.5rem; color: var(--muted); }
+    @media (max-width: 860px) {
+      .session-cards, .pricing-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo1.png" alt="Bakasana Wellness logo" />
+      <a class="brand-link" href="index.html">Bakasana Wellness</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Menu">
+      ☰
+    </button>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Over</a>
+      <a href="massage.html">Massage</a>
+      <a href="yoga.html">Yoga 1:1</a>
+      <a href="reiki.html">Reiki</a>
+      <a href="ayurveda.html">Ayurveda</a>
+      <a href="burnout.html">Burnout Program</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Intro -->
+  <section class="section alt">
+    <div class="container">
+      <h1>Burnout Recovery Program</h1>
+      <p class="pull">For deep stress, exhaustion and emotional overload</p>
+      <p>Do you feel constantly tired, tense or overwhelmed? This 3-session program is designed to help your body and mind recover step by step.</p>
+      <p>Instead of a one-time massage, we work together to:</p>
+      <ul class="bullets">
+        <li>Release built-up tension</li>
+        <li>Calm your nervous system</li>
+        <li>Restore your energy and focus</li>
+      </ul>
+      <p class="note">This is especially supportive for burnout symptoms, chronic stress, expats adjusting to a new environment, and busy professionals.</p>
+    </div>
+  </section>
+
+  <!-- Sessions -->
+  <section class="section">
+    <div class="container">
+      <h2>How the program works</h2>
+      <div class="session-cards">
+        <div class="session-card">
+          <div class="session-number">Session one</div>
+          <h3>Body tension release</h3>
+          <span class="session-tag">Massage</span>
+          <p>We start with a therapeutic Ayurvedic massage focused on:</p>
+          <ul class="bullets">
+            <li>Neck and shoulder tension</li>
+            <li>Back tightness</li>
+            <li>Physical stress stored in the body</li>
+          </ul>
+          <p>This session helps your body switch from 'survival mode' to relaxation.</p>
+          <div class="result-line"><strong>Result:</strong> less muscle pain, deeper breathing, immediate relief</div>
+        </div>
+
+        <div class="session-card">
+          <div class="session-number">Session two</div>
+          <h3>Nervous system reset</h3>
+          <span class="session-tag">Yoga</span>
+          <p>In the second session we slow everything down and guide your body into deep rest. This treatment focuses on:</p>
+          <ul class="bullets">
+            <li>Calming the mind</li>
+            <li>Improving sleep quality</li>
+            <li>Reducing anxiety and overstimulation</li>
+          </ul>
+          <p>We use gentle touch and rhythm to support your nervous system.</p>
+          <div class="result-line"><strong>Result:</strong> mental clarity, better sleep, emotional calm</div>
+        </div>
+
+        <div class="session-card">
+          <div class="session-number">Session three</div>
+          <h3>Energy balance &amp; recovery plan</h3>
+          <span class="session-tag">Reiki</span>
+          <p>In the final session we work with Reiki to restore inner balance and support emotional recovery. You will also receive:</p>
+          <ul class="bullets">
+            <li>Self-care tips for home</li>
+            <li>Guidance to maintain your energy after the program</li>
+          </ul>
+          <div class="result-line"><strong>Result:</strong> feeling grounded, recharged and more in control</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section alt">
+    <div class="container">
+      <h2>For whom is this program?</h2>
+      <p>This program is ideal if you:</p>
+      <ul class="bullets">
+        <li>Feel exhausted even after rest</li>
+        <li>Experience constant stress or pressure</li>
+        <li>Have difficulty sleeping or relaxing</li>
+        <li>Are an expat adjusting to life in the Netherlands</li>
+        <li>Work in a demanding job or care for others</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section">
+    <div class="container">
+      <h2>Your investment in recovery</h2>
+      <p class="note">All packages consist of 3 × 60-minute sessions, ideally used within 6–8 weeks for the best results.</p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Reset package</h3>
+          <div class="price">€180</div>
+          <p class="note">3 × 60-minute sessions — full program booking</p>
+          <ul class="benefit-list">
+            <li>Body tension release (massage)</li>
+            <li>Nervous system reset (yoga)</li>
+            <li>Energy balance &amp; recovery (Reiki)</li>
+          </ul>
+        </div>
+        <div class="pricing-card featured">
+          <h3>Deep recovery package</h3>
+          <div class="price">€195</div>
+          <p class="note">3 × 60-minute sessions — full program booking</p>
+          <ul class="benefit-list">
+            <li>Body tension release (massage)</li>
+            <li>Nervous system reset (yoga)</li>
+            <li>Energy balance &amp; recovery (Reiki)</li>
+            <li>1-hour personal coaching session</li>
+            <li>Personalised recovery plan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why a program -->
+  <section class="section alt">
+    <div class="container">
+      <h2>Why choose a program instead of one session?</h2>
+      <p>Burnout and chronic stress build up over time. A structured approach helps your body learn how to relax again — not just for one day.</p>
+      <p>Clients often experience:</p>
+      <ul class="bullets">
+        <li>Lasting relaxation</li>
+        <li>More energy during the day</li>
+        <li>Improved emotional balance</li>
+        <li>Better sleep and focus</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <h2>Take the first step towards feeling like yourself again</h2>
+      <p>Book your first session and start your recovery journey today.</p>
+      <a href="contact.html" class="btn">Book your first session</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Contact</h3>
+      <ul class="contact">
+        <li><i class="fa-solid fa-phone ci"></i> Bel me op: <a href="tel:+31636565379">06 36 56 53 79</a></li>
+        <li><i class="fa-solid fa-envelope ci"></i> Email me op: <a href="mailto:livingtheyogalife@gmail.com">livingtheyogalife@gmail.com</a></li>
+        <li><i class="fa-solid fa-location-dot ci"></i> Vind me in: Sleeuwijk, Nederland</li>
+      </ul>
+    </div>
+    <div class="smallprint">© <span class="year"></span> Bakasana Wellness &nbsp;|&nbsp; KVK: 89887751</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
