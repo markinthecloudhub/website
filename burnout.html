@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burnout Herstelprogramma — Bakasana Wellness</title>
+  <meta name="description" content="Een 3-sessie burnout herstelprogramma voor diepe stress, uitputting en emotionele overbelasting." />
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .session-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; margin-top: 2rem; }
+    .session-card { background: var(--card); padding: 1.5rem; border-radius: 16px; border: 1px solid #eee; box-shadow: 0 6px 16px rgba(0,0,0,.04); }
+    .session-number { font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: .4rem; }
+    .session-card h3 { margin-bottom: .25rem; }
+    .session-tag { display: inline-block; font-size: .8rem; color: var(--muted); border: 1px solid #ddd; border-radius: 999px; padding: .15rem .65rem; margin-bottom: .75rem; }
+    .result-line { margin-top: 1rem; padding-top: .75rem; border-top: 1px solid #eee; font-size: .9rem; color: var(--muted); }
+    .result-line strong { color: var(--ink); }
+    .pricing-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 2rem; }
+    .pricing-card { background: var(--card); padding: 1.5rem; border-radius: 16px; border: 1px solid #eee; box-shadow: 0 6px 16px rgba(0,0,0,.04); }
+    .pricing-card.featured { border-color: var(--accent); box-shadow: 0 6px 24px var(--ring); }
+    .pricing-card h3 { margin-bottom: .25rem; }
+    .pricing-card .price { font-size: 1.5rem; font-weight: 600; color: var(--ink); margin: .5rem 0; font-family: "Playfair Display", serif; }
+    .pricing-card .note { color: var(--muted); font-size: .9em; margin-bottom: 1rem; }
+    .benefit-list { list-style: none; padding: 0; margin: .75rem 0 0; }
+    .benefit-list li { display: flex; gap: .5rem; align-items: flex-start; margin: .35rem 0; font-size: .95rem; }
+    .benefit-list li::before { content: "✓"; color: var(--accent); font-weight: 600; flex-shrink: 0; margin-top: .05rem; }
+    .cta-section { text-align: center; padding: 3rem 0; }
+    .cta-section p { max-width: 500px; margin: 0 auto 1.5rem; color: var(--muted); }
+    @media (max-width: 860px) {
+      .session-cards, .pricing-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo1.png" alt="Bakasana Wellness logo" />
+      <a class="brand-link" href="index.html">Bakasana Wellness</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Menu">
+      ☰
+    </button>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Over</a>
+      <a href="massage.html">Massage</a>
+      <a href="yoga.html">Yoga 1:1</a>
+      <a href="reiki.html">Reiki</a>
+      <a href="ayurveda.html">Ayurveda</a>
+      <a href="burnout.html">Burnout Programma</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Intro -->
+  <section class="section alt">
+    <div class="container">
+      <h1>Burnout Herstelprogramma</h1>
+      <p class="pull">Voor diepe stress, uitputting en emotionele overbelasting</p>
+      <p>Voelt u zich constant moe, gespannen of overweldigd? Dit programma van 3 sessies is ontworpen om uw lichaam en geest stap voor stap te laten herstellen.</p>
+      <p>In plaats van een eenmalige massage werken we samen aan:</p>
+      <ul class="bullets">
+        <li>Het loslaten van opgebouwde spanning</li>
+        <li>Het kalmeren van uw zenuwstelsel</li>
+        <li>Het herstellen van uw energie en focus</li>
+      </ul>
+      <p class="note">Dit programma is bijzonder ondersteunend bij burnoutklachten, chronische stress, expats die wennen aan een nieuwe omgeving, en drukbezette professionals.</p>
+    </div>
+  </section>
+
+  <!-- Sessies -->
+  <section class="section">
+    <div class="container">
+      <h2>Hoe het programma werkt</h2>
+      <div class="session-cards">
+        <div class="session-card">
+          <div class="session-number">Sessie één</div>
+          <h3>Lichamelijke spanning loslaten</h3>
+          <span class="session-tag">Massage</span>
+          <p>We beginnen met een therapeutische Ayurvedische massage gericht op:</p>
+          <ul class="bullets">
+            <li>Spanning in nek en schouders</li>
+            <li>Stijfheid in de rug</li>
+            <li>Fysieke stress die is opgeslagen in het lichaam</li>
+          </ul>
+          <p>Deze sessie helpt uw lichaam om van 'overlevingsmodus' naar ontspanning te schakelen.</p>
+          <div class="result-line"><strong>Resultaat:</strong> minder spierpijn, dieper ademhalen, directe verlichting</div>
+        </div>
+
+        <div class="session-card">
+          <div class="session-number">Sessie twee</div>
+          <h3>Zenuwstelsel reset</h3>
+          <span class="session-tag">Yoga</span>
+          <p>In de tweede sessie vertragen we alles en begeleiden we uw lichaam naar diepe rust. Deze behandeling richt zich op:</p>
+          <ul class="bullets">
+            <li>Het kalmeren van de geest</li>
+            <li>Het verbeteren van de slaapkwaliteit</li>
+            <li>Het verminderen van angst en overprikkeling</li>
+          </ul>
+          <p>We gebruiken zachte aanraking en ritme om uw zenuwstelsel te ondersteunen.</p>
+          <div class="result-line"><strong>Resultaat:</strong> mentale helderheid, betere slaap, emotionele rust</div>
+        </div>
+
+        <div class="session-card">
+          <div class="session-number">Sessie drie</div>
+          <h3>Energiebalans &amp; herstelplan</h3>
+          <span class="session-tag">Reiki</span>
+          <p>In de laatste sessie werken we met Reiki om innerlijk evenwicht te herstellen en emotioneel herstel te ondersteunen. U ontvangt ook:</p>
+          <ul class="bullets">
+            <li>Zelfzorgtips voor thuis</li>
+            <li>Begeleiding om uw energie na het programma vast te houden</li>
+          </ul>
+          <div class="result-line"><strong>Resultaat:</strong> gegrond, opgeladen en meer in controle</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voor wie -->
+  <section class="section alt">
+    <div class="container">
+      <h2>Voor wie is dit programma?</h2>
+      <p>Dit programma is ideaal als u:</p>
+      <ul class="bullets">
+        <li>Uitgeput bent, ook na rust</li>
+        <li>Voortdurend stress of druk ervaart</li>
+        <li>Moeite heeft met slapen of ontspannen</li>
+        <li>Een expat bent die went aan het leven in Nederland</li>
+        <li>Een veeleisende baan heeft of voor anderen zorgt</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Prijzen -->
+  <section class="section">
+    <div class="container">
+      <h2>Uw investering in herstel</h2>
+      <p class="note">Alle pakketten bestaan uit 3 × 60 minuten sessies, bij voorkeur te gebruiken binnen 6–8 weken voor het beste resultaat.</p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Reset pakket</h3>
+          <div class="price">€180</div>
+          <p class="note">3 × 60 minuten sessies — bij boeking van het volledige programma</p>
+          <ul class="benefit-list">
+            <li>Lichamelijke spanning loslaten (massage)</li>
+            <li>Zenuwstelsel reset (yoga)</li>
+            <li>Energiebalans &amp; herstel (Reiki)</li>
+          </ul>
+        </div>
+        <div class="pricing-card featured">
+          <h3>Diep herstel pakket</h3>
+          <div class="price">€195</div>
+          <p class="note">3 × 60 minuten sessies — bij boeking van het volledige programma</p>
+          <ul class="benefit-list">
+            <li>Lichamelijke spanning loslaten (massage)</li>
+            <li>Zenuwstelsel reset (yoga)</li>
+            <li>Energiebalans &amp; herstel (Reiki)</li>
+            <li>1 uur persoonlijke coachingsessie</li>
+            <li>Persoonlijk herstelplan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waarom een programma -->
+  <section class="section alt">
+    <div class="container">
+      <h2>Waarom een programma in plaats van één sessie?</h2>
+      <p>Burnout en chronische stress bouwen zich op over tijd. Een gestructureerde aanpak helpt uw lichaam opnieuw te leren ontspannen — niet alleen voor één dag.</p>
+      <p>Cliënten ervaren vaak:</p>
+      <ul class="bullets">
+        <li>Blijvende ontspanning</li>
+        <li>Meer energie overdag</li>
+        <li>Verbeterd emotioneel evenwicht</li>
+        <li>Betere slaap en focus</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <h2>Zet de eerste stap naar uzelf voelen</h2>
+      <p>Boek uw eerste sessie en begin vandaag nog aan uw herstelreis.</p>
+      <a href="contact.html" class="btn">Boek uw eerste sessie</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Contact</h3>
+      <ul class="contact">
+        <li><i class="fa-solid fa-phone ci"></i> Bel me op: <a href="tel:+31636565379">+31 6 36 56 53 79</a></li>
+        <li><i class="fa-solid fa-envelope ci"></i> Email me op: <a href="mailto:livingtheyogalife@gmail.com">livingtheyogalife@gmail.com</a></li>
+        <li><i class="fa-solid fa-location-dot ci"></i> Vind me in: Sleeuwijk, Nederland</li>
+      </ul>
+    </div>
+    <div class="smallprint">© <span class="year"></span> Bakasana Wellness &nbsp;|&nbsp; KVK: 89887751</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
