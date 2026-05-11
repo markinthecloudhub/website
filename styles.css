@@ -84,15 +84,14 @@ nav a.whatsapp:hover{color:#1da851}
 .site-footer{background:#9fa99a;color:#f9f9f6;padding:1.75rem 0;margin-top:1.5rem}
 .site-footer h3{color:#ffffff;margin-bottom:.4rem}
 .footer-grid{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start}
-.smallprint{align-self:end;color:#edf1ec}
+.smallprint{align-self:end;color:#edf1ec;font-size:.85rem}
+@media (max-width: 860px){
+  .footer-grid{grid-template-columns:1fr}
+  .smallprint{align-self:auto;padding-top:.5rem;border-top:1px solid rgba(255,255,255,.2)}
+}
 .footer-grid a{color:#ffffff}
 .footer-grid a:hover{color:#f4e9d8}
 
-@media (max-width: 860px){
-  .hero-grid,.two-col,.product{grid-template-columns:1fr}
-  .cards{grid-template-columns:1fr}
-  nav{display:none}
-}
 /* --- Mobile Menu --- */
 .menu-toggle {
   display: none;
@@ -104,8 +103,15 @@ nav a.whatsapp:hover{color:#1da851}
 }
 
 @media (max-width: 860px) {
+  .hero-grid,.two-col,.product{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+
   .menu-toggle {
     display: block;
+  }
+
+  .site-header {
+    position: relative;
   }
 
   .main-nav {
@@ -114,18 +120,25 @@ nav a.whatsapp:hover{color:#1da851}
     background: #fff;
     position: absolute;
     top: 64px;
-    right: 0;
     left: 0;
+    right: 0;
+    z-index: 100;
     padding: 1rem 0;
     border-top: 1px solid #eee;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
   }
 
   .main-nav a {
-    margin: 0.5rem 0;
-    padding: 0.5rem 1rem;
+    margin: 0;
+    padding: 0.65rem 1.5rem;
     display: block;
     text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .main-nav a:last-child {
+    border-bottom: none;
   }
 
   .main-nav.open {
